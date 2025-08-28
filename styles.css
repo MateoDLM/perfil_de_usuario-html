@@ -1,0 +1,13 @@
+header{
+    background-color: lightcyan;
+}
+#fotoPerfil{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+footer{
+    background-color: lightcyan;
+    text-align: left;
+    padding: 10px 0px;
+}
