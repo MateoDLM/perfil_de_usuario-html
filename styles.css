@@ -1,13 +1,68 @@
 header{
-    background-color: lightcyan;
+    background-color: #96837bb2;
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
 }
 #fotoPerfil{
-    border-radius: 50%;
+    border-radius: 20%;
     width: 150px;
     height: 150px;
+    text-align: right;
 }
 footer{
-    background-color: lightcyan;
+    background-color: #96837bb2;
     text-align: left;
     padding: 10px 0px;
+    margin-top: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+.contenedorImagenes{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border: 2px solid #96837bb2;
+    border-radius: 15px;
+    flex-direction: row;
+}
+.contenedorHeader{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border: 2px solid #96837bb2;
+    border-radius: 15px;
+    text-align: left;
+}
+.contenedorFormulario {
+    margin: 15px;
+}
+.campo-formulario {
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+}
+
+.campo-formulario label{
+    width: 30%; 
+    text-align: left;
+}
+
+.campo-formulario input, .campo-formulario textarea{
+   width: 50%;
+}
+
+.imagenTecnologia{
+    border-radius: 15px;
+    width: 150px;
+    margin: 10px;
+}
+#contactTable{
+    margin-top: 20px;
+    margin: 20px;
+}
+td, th {
+    border: 1px solid #96837bb2;
+    padding: 8px;
 }

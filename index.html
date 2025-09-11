@@ -9,16 +9,20 @@
 <body>
     
     <header>
-        <h1>Bienvenido a mi Perfil de Usuario - Mateo De Luca</h1>
-        <img src="sistemas.jpg" alt="Foto de perfil" id="fotoPerfil">
+        <div id="contenedorHeader">
+            <h1>Mateo De Luca</h1>
+            <h2>Bienvenido a mi página personal</h2>
+        </div>
+        <img src="mdl.jpg" alt="Foto de perfil" id="fotoPerfil">
     </header>
     
     <main>
-        <section id="user-info">
+        <section id="info">
             <h2 id="sobreMi">Estudiante de Ingeniería en Sistemas de la UTN FRM</h2>
             <div id="redes">
-        <p >Te dejo mi GitHub y mi Linkedin: </p>
+        <p>GitHub para ver mis proyectos realizados</p>
         <a href="https://github.com/MateoDLM" target="_blank">GitHub</a><br>
+        <p>Linkedin para ver mi experiencia</p>
         <a href="https://www.linkedin.com/in/mateodeluca" target="_blank">Linkedin</a>
     </div>
 
@@ -52,7 +56,6 @@
     </article>
 
 
-    
     <p>Para esta página web básica he utilizado:</p>
     <ul id="listaTecnologias">
         <li>HTML</li>
@@ -61,21 +64,61 @@
         <li>Entre otras tecnologías</li>
     </ul>
 
-    <img src="sistemas.jpg" alt="Imagen sobre tecnología" id="imagenTecnologia" width="30%">
+    <div class="contenedorImagenes">
+        <img src="sistemas.jpg" alt="Imagen sobre tecnología" class="imagenTecnologia">
+        <img src="sistemasGrupo.jpg" alt="Imagen sobre grupo de trabajo" class="imagenTecnologia">
+    </div>
         </section>
-        <section id="formulario">
+
+        <section id="contacto">
             <form>
                 <h2>Contáctame!</h2>
-                <label for="nomyape">Nombre y Apellido: </label>
-                <input type="text" id="nomyape" placeholder="Nombre y Apellido"><br>
-                <label for="email">Email: </label>
-                <input type="email" id="email" placeholder="Email"><br>
-                <label for="numtelefono">Número de Teléfono: </label>
-                <input type="number" id="numtelefono" placeholder="Número de Teléfono"><br>
-                <label for="consulta">Consulta: </label>
-                <textarea id="consulta" placeholder="Escribe tu consulta aquí..."></textarea><br>
-                <button id="enviar">Enviar</button>
+                <div class="contenedorFormulario">
+                    <div class="campo-formulario">
+                        <label for="nomYApe">Nombre y Apellido:</label>
+                        <input type="text" id="nomYApe" placeholder="Nombre y Apellido">
+                    </div>
+                    
+                    <div class="campo-formulario">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                    
+                    <div class="campo-formulario">
+                        <label for="numtelefono">Número de Teléfono:</label>
+                        <input type="number" id="numtelefono" placeholder="Número de Teléfono">
+                    </div>
+                    
+                    <div class="campo-formulario">
+                        <label for="consulta">Consulta:</label>
+                        <textarea id="consulta" placeholder="Escribe tu consulta aquí..."></textarea>
+                    </div>
+                    <button id="enviar">Enviar</button>
+                </div> 
             </form>
+ 
+                <table id="tablaContacto">
+                <thead>
+                    <tr>
+                        <th>Contacto</th>
+                        <th>Información</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Email</td>
+                        <td>mateodelucamontanaro@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Teléfono</td>
+                        <td>261 655 2238</td>
+                    </tr>
+                    <tr>
+                        <td>LinkedIn</td>
+                        <td><a href="https://www.linkedin.com/in/mateodeluca" target="_blank">Mateo De Luca</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
     
