@@ -69,6 +69,21 @@ td, th {
 .proyecto{
     border: 2px solid #96837bb2;
     border-radius: 15px;
-
+    margin: 20px;
     padding: 10px;
+}
+
+#contenedorRedes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.red {
+    border: 2px solid #96837bb2;
+    border-radius: 15px;
+    padding: 15px 25px;
+    text-align: center;
+    min-width: 250px;
 }
