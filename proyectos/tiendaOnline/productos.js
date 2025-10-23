@@ -12,7 +12,7 @@ searchInputElem.addEventListener('input', (event) => {
 const goToProductDetails = (productId) => {
   const selectedProduct = totalProducts.find(product => product.id === productId);
   window.localStorage.setItem('selectedProduct', JSON.stringify(selectedProduct));
-  window.location.href = `detallesProducto.html?id=${productId}`;
+  window.location.href = `productDetails.html?id=${productId}`;
 };
 
 const fetchProducts = async () => {
