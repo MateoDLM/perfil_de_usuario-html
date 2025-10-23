@@ -54,7 +54,6 @@ const fetchCharacter = async (id) => {
         // Sumamos 1 al index para que coincida con los IDs (1, 2, 3...)
         const num = index + 1; 
 
-        // Usamos 'num' para construir los selectores dinámicamente
         document.querySelector(`#character-id${num}`).innerHTML = `<p>ID: ${character.id}</p>`;
         document.querySelector(`#character-name${num}`).innerHTML = `<p>Name: ${character.name}</p>`;
         document.querySelector(`#character-occupation${num}`).innerHTML = `<p>Occupation: ${character.occupation}</p>`;
