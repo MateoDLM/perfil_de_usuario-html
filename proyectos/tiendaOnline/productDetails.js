@@ -1,12 +1,13 @@
 const productDetailsElem = document.querySelector('#productDetails');
 const selectedProduct = JSON.parse(window.localStorage.getItem('selectedProduct'));
 
-document.querySelector(`#title`).innerHTML = `<p>Title: ${selectedProduct.title}</p>`;
-document.querySelector(`#price`).innerHTML = `<p>Price: ${selectedProduct.price}</p>`;
-document.querySelector(`#description`).innerHTML = `<p>Description: ${selectedProduct.description}</p>`;
-document.querySelector(`#category`).innerHTML = `<p>Category: ${selectedProduct.category}</p>`;
-document.querySelector(`#image`).src = `${selectedProduct.image}`;
-document.querySelector(`#rating`).innerHTML = `<p>Rating: ${selectedProduct.rating.rate} (${selectedProduct.rating.count} reviews)</p>`;
+document.querySelector(`#title`).textContent = selectedProduct.title;
+document.querySelector(`#price`).innerHTML = `💰 Price: $${selectedProduct.price}`;
+document.querySelector(`#description`).innerHTML = `📝 ${selectedProduct.description}`;
+document.querySelector(`#category`).innerHTML = `📁 Category: ${selectedProduct.category}`;
+document.querySelector(`#image`).src = selectedProduct.image;
+document.querySelector(`#image`).alt = selectedProduct.title;
+document.querySelector(`#rating`).innerHTML = `⭐ Rating: ${selectedProduct.rating.rate}/5 (${selectedProduct.rating.count} reviews)`;
 
 
 

@@ -37,7 +37,7 @@ const renderTable = (products) => {
       <tr>
         <td><a href="#" onclick="goToProductDetails(${product.id})">${product.title}</a></td>
         <td>${product.price}</td>
-        <td><img src="${product.image}" alt="${product.title}" width="50" height="50"></td>
+        <td><img src="${product.image}" alt="${product.title}"></td>
       </tr>
     `;
   });
