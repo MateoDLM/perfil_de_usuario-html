@@ -1,89 +1,480 @@
-header{
-    background-color: #96837bb2;
-    border-radius: 15px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-around;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#fotoPerfil{
-    border-radius: 20%;
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #2d3748;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ed 100%);
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
+    border-radius: 20px;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(21, 101, 192, 0.4);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+header:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(21, 101, 192, 0.5);
+}
+
+#contenedorHeader h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#contenedorHeader h2 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+#fotoPerfil {
+    border-radius: 50%;
     width: 150px;
     height: 150px;
-    text-align: right;
+    border: 5px solid white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
-footer{
-    background-color: #96837bb2;
-    text-align: left;
-    padding: 10px 0px;
-    margin-top: 20px;
-    border-radius: 15px;
+
+#fotoPerfil:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+main {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #0d47a1;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #1565c0, #0d47a1);
+    border-radius: 2px;
+}
+
+h3 {
+    color: #2d3748;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#sobreMi {
     text-align: center;
+    font-size: 1.5em;
+    color: #4a5568;
+    padding: 20px;
+    background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.contenedorImagenes{
+
+#biografia {
+    background: linear-gradient(135deg, #bbdefb 0%, #90caf9 30%, #64b5f6 70%, #42a5f5 100%);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+}
+
+#biografia p {
+    margin-bottom: 15px;
+    color: #2d3748;
+}
+
+#biografia strong {
+    color: #0d47a1;
+    font-weight: 600;
+}
+
+#biografia em {
+    color: #0d47a1;
+}
+
+#listaTecnologias {
+    list-style: none;
+    padding: 20px 0;
+}
+
+#listaTecnologias li {
+    padding: 12px 20px;
+    margin: 8px 0;
+    background: linear-gradient(90deg, #1565c0 0%, #0d47a1 100%);
+    color: white;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    box-shadow: 0 4px 10px rgba(21, 101, 192, 0.4);
+    transition: transform 0.2s ease;
+}
+
+#listaTecnologias li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(21, 101, 192, 0.5);
+}
+
+/* Contenedor de imágenes */
+.contenedorImagenes {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-    border: 2px solid #96837bb2;
-    border-radius: 15px;
-    flex-direction: row;
-}
-.contenedorHeader{
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    border: 2px solid #96837bb2;
-    border-radius: 15px;
-    text-align: left;
-}
-.contenedorFormulario {
-    margin: 15px;
-}
-.campo-formulario {
-    display: flex;
-    gap: 10px;
-    margin: 15px;
+    padding: 30px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    gap: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.campo-formulario label{
-    width: 30%; 
-    text-align: left;
-}
-
-.campo-formulario input, .campo-formulario textarea{
-   width: 50%;
-}
-
-.imagenTecnologia{
+.imagenTecnologia {
     border-radius: 15px;
-    width: 150px;
-    margin: 10px;
-}
-#contactTable{
-    margin-top: 20px;
-    margin: 20px;
-}
-td, th {
-    border: 1px solid #96837bb2;
-    padding: 8px;
-}
-.proyecto{
-    border: 2px solid #96837bb2;
-    border-radius: 15px;
-    margin: 20px;
-    padding: 10px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.imagenTecnologia:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Redes sociales */
 #contenedorRedes {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin: 20px 0;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
 }
 
 .red {
-    border: 2px solid #96837bb2;
+    background: white;
+    border: none;
     border-radius: 15px;
-    padding: 15px 25px;
+    padding: 25px 35px;
     text-align: center;
-    min-width: 250px;
+    min-width: 280px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.red:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(21, 101, 192, 0.3);
+}
+
+.red p {
+    color: #4a5568;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.red a {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(90deg, #1565c0 0%, #0d47a1 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.red a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(21, 101, 192, 0.5);
+}
+
+/* Proyectos */
+.proyecto {
+    background: white;
+    border: none;
+    border-radius: 20px;
+    margin: 25px 0;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-left: 5px solid transparent;
+}
+
+.proyecto:hover {
+    transform: translateX(10px);
+    box-shadow: 0 8px 30px rgba(21, 101, 192, 0.3);
+    border-left-color: #1565c0;
+}
+
+.proyecto h3 {
+    color: #0d47a1;
+}
+
+.proyecto p {
+    color: #4a5568;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.botonVerProyecto {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(90deg, #1565c0 0%, #0d47a1 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.botonVerProyecto:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(21, 101, 192, 0.5);
+}
+
+/* Formulario de contacto */
+form {
+    background: linear-gradient(135deg, #bbdefb 0%, #90caf9 100%);
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contenedorFormulario {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.campo-formulario label {
+    color: #2d3748;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+    outline: none;
+    border-color: #1565c0;
+    box-shadow: 0 0 0 3px rgba(21, 101, 192, 0.2);
+}
+
+.campo-formulario textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#enviar {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg, #1565c0 0%, #0d47a1 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#enviar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(21, 101, 192, 0.5);
+}
+
+#enviar:active {
+    transform: translateY(-1px);
+}
+
+/* Tabla de contacto */
+#tablaContacto {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#tablaContacto thead {
+    background: linear-gradient(90deg, #1565c0 0%, #0d47a1 100%);
+    color: white;
+}
+
+#tablaContacto th,
+#tablaContacto td {
+    padding: 18px;
+    text-align: left;
+}
+
+#tablaContacto th {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+#tablaContacto tbody tr {
+    background: white;
+    transition: background-color 0.3s ease;
+}
+
+#tablaContacto tbody tr:nth-child(even) {
+    background: #f7fafc;
+}
+
+#tablaContacto tbody tr:hover {
+    background: #edf2f7;
+}
+
+#tablaContacto td {
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+}
+
+#tablaContacto a {
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+#tablaContacto a:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(21, 101, 192, 0.4);
+}
+
+footer p {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    #contenedorHeader h1 {
+        font-size: 2em;
+    }
+
+    #fotoPerfil {
+        margin-top: 20px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .contenedorImagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenTecnologia {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #contenedorRedes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .red {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .proyecto {
+        margin: 15px 0;
+        padding: 20px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .campo-formulario {
+        margin-bottom: 20px;
+    }
 }

@@ -34,21 +34,21 @@
             
     <article id="biografia">
          <p>
-            ¡Hola! Soy <strong>Mateo De Luca</strong>, estudiante de <em>Ingeniería en Sistemas</em> en la 
+            ¡Hola! Soy <strong>Mateo De Luca</strong>, estudiante de <strong>Ingeniería en Sistemas</strong> en la 
             <strong>Universidad Tecnológica Nacional (UTN) - Facultad Regional Mendoza</strong>. 
             Actualmente me encuentro cursando mi tercer año de carrera, una etapa emocionante donde 
             estoy profundizando mis conocimientos en desarrollo de software y tecnologías modernas.
         </p>
         
         <p>
-            Durante estos años de estudio he descubierto mi <em>pasión por la programación</em> y el 
+            Durante estos años de estudio he descubierto mi pasión por la programación y el 
             desarrollo web. La UTN me ha brindado una base sólida en fundamentos de la ingeniería, 
             matemáticas y programación, y ahora estoy explorando áreas más especializadas como 
             desarrollo de software, bases de datos y arquitectura de sistemas.
         </p>
         
         <p>
-            En este tercer año estoy cursando materias clave como <strong>Desarrollo de Software</strong>, 
+            En este tercer año estoy cursando materias clave como Desarrollo de Software, 
             donde estamos aplicando y trabajando con tecnologías web modernas. 
             Me motiva especialmente poder crear soluciones tecnológicas que resuelvan problemas reales 
             y mejoren la experiencia de los usuarios.
@@ -61,13 +61,12 @@
         </p>
     </article>
 
-
     <p>Para esta página web básica he utilizado:</p>
     <ul id="listaTecnologias">
         <li>HTML</li>
         <li>CSS</li>
+        <li>JavaScript</li>
         <li>Git y GitHub para control</li>
-        <li>Entre otras tecnologías</li>
     </ul>
 
     <div class="contenedorImagenes">
@@ -96,31 +95,31 @@
         </section>
 
     <section id="contacto">
-            <form>
-                <h2>Contáctame!</h2>
-                <div class="contenedorFormulario">
-                    <div class="campo-formulario">
-                        <label for="nomYApe">Nombre y Apellido:</label>
-                        <input type="text" id="nomYApe" placeholder="Nombre y Apellido">
-                    </div>
+        <h2>Contáctame!</h2>
+        <form action="https://formsubmit.co/delucamate@gmail.com" method="POST">
+            <div class="contenedorFormulario">
+                <div class="campo-formulario">
+                    <label for="nomYApe">Nombre y Apellido:</label>
+                    <input type="text" id="nomYApe" placeholder="Nombre y Apellido" name="nombreApellido" required>
+                </div>
                     
-                    <div class="campo-formulario">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" placeholder="Email">
-                    </div>
+                <div class="campo-formulario">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Email" name="email" required>
+                </div>
                     
-                    <div class="campo-formulario">
-                        <label for="numtelefono">Número de Teléfono:</label>
-                        <input type="number" id="numtelefono" placeholder="Número de Teléfono">
-                    </div>
+                <div class="campo-formulario">
+                    <label for="numtelefono">Número de Teléfono:</label>
+                    <input type="number" id="numtelefono" placeholder="Número de Teléfono" name="numumeroTelefono" required>
+                </div>
                     
-                    <div class="campo-formulario">
-                        <label for="consulta">Consulta:</label>
-                        <textarea id="consulta" placeholder="Escribe tu consulta aquí..."></textarea>
-                    </div>
-                    <button id="enviar">Enviar</button>
-                </div> 
-            </form>
+                <div class="campo-formulario">
+                    <label for="consulta">Consulta:</label>
+                    <textarea id="consulta" placeholder="Escribe tu consulta aquí..." name="consulta" required></textarea>
+                </div>
+                <button id="enviar">Enviar</button>
+            </div> 
+        </form>
  
                 <table id="tablaContacto">
                 <thead>
