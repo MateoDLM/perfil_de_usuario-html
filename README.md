@@ -4,6 +4,13 @@ Bienvenido al repositorio de mi página web personal. Este proyecto fue desarrol
 
 El sitio actúa como una carta de presentación profesional e integra una colección de aplicaciones web interactivas que demuestran el dominio de tecnologías Frontend.
 
+## 🌐 Ver Online
+
+Puedes visitar la versión desplegada del proyecto en el siguiente enlace:
+🔗 **[Ver Sitio en Vercel](https://perfil-de-usuario-html-kapn7pnl7-mateo-de-lucas-projects.vercel.app/)**
+
+---
+
 ## 🚀 Descripción General
 
 El proyecto consta de una **Landing Page** principal que utiliza HTML semántico y CSS moderno para presentar información personal, académica y de contacto. Desde allí, se navega hacia tres micro-proyectos que exhiben lógica de programación avanzada en JavaScript.
@@ -34,51 +41,4 @@ El portafolio incluye tres aplicaciones web funcionales alojadas en la carpeta `
 * **Descripción:** Una calculadora totalmente funcional capaz de realizar operaciones matemáticas básicas (+, −, ×, ÷).
 * **Características Técnicas:**
     * Manipulación del DOM para capturar eventos de click.
-    * Manejo de errores (ej. división por cero).
-    * Lógica de estado para almacenar valores y operadores.
-
-#### B. Galería de Personajes (The Simpsons API) 🍩
-* **Ruta:** `proyectos/galeriaPersonajes/`
-* **Descripción:** Aplicación que consume una API externa para mostrar tarjetas de personajes aleatorios.
-* **Características Técnicas:**
-    * Uso de **Asincronismo (Async/Await)**.
-    * Implementación de `Promise.all()` para realizar múltiples peticiones simultáneas y optimizar la carga.
-    * Loader CSS personalizado durante la espera de datos.
-    * Renderizado dinámico de tarjetas con imagen, nombre, ocupación e ID.
-
-#### C. Tienda Online (FakeStore API) 🛍️
-* **Ruta:** `proyectos/tiendaOnline/`
-* **Descripción:** Un e-commerce simulado que lista productos y permite ver sus detalles.
-* **Características Técnicas:**
-    * Consumo de la **FakeStore API**.
-    * **Buscador en tiempo real:** Filtrado de productos mediante el método `.filter()` en arrays.
-    * **Persistencia de datos:** Uso de `localStorage` para pasar información del producto seleccionado entre la página de listado (`products.html`) y la de detalles (`productDetails.html`).
-    * Navegación dinámica mediante parámetros URL.
-
----
-
-## 🛠️ Instalación y Uso
-
-Este es un proyecto de sitio estático, por lo que no requiere instalación de dependencias de backend.
-
-1.  **Clonar el repositorio:**
-    ```bash
-    git clone [https://github.com/MateoDLM/perfil_de_usuario.git](https://github.com/MateoDLM/perfil_de_usuario.git)
-    ```
-2.  **Ejecutar:**
-    * Navega a la carpeta del proyecto.
-    * Abre el archivo `index.html` en tu navegador web de preferencia.
-    * *Recomendación:* Utilizar la extensión "Live Server" de VS Code para una mejor experiencia de desarrollo.
-
----
-
-## ✒️ Autor
-
-**Mateo De Luca**
-* Estudiante de Ingeniería en Sistemas - UTN FRM
-* [LinkedIn](https://www.linkedin.com/in/mateodeluca)
-* [GitHub](https://github.com/MateoDLM)
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+    * Manejo de errores (ej.
