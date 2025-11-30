@@ -41,4 +41,36 @@ El portafolio incluye tres aplicaciones web funcionales alojadas en la carpeta `
 * **Descripción:** Una calculadora totalmente funcional capaz de realizar operaciones matemáticas básicas (+, −, ×, ÷).
 * **Características Técnicas:**
     * Manipulación del DOM para capturar eventos de click.
-    * Manejo de errores (ej.
+    * Manejo de errores (ej. división por cero).
+    * Lógica de estado para almacenar valores y operadores.
+
+#### B. Galería de Personajes (The Simpsons API) 🍩
+* **Ruta:** `proyectos/galeriaPersonajes/`
+* **Descripción:** Aplicación que consume una API externa para mostrar tarjetas de personajes aleatorios.
+* **Características Técnicas:**
+    * Uso de **Asincronismo (Async/Await)**.
+    * Implementación de `Promise.all()` para realizar múltiples peticiones simultáneas y optimizar la carga.
+    * Loader CSS personalizado durante la espera de datos.
+    * Renderizado dinámico de tarjetas con imagen, nombre, ocupación e ID.
+
+#### C. Tienda Online (FakeStore API) 🛍️
+* **Ruta:** `proyectos/tiendaOnline/`
+* **Descripción:** Un e-commerce simulado que lista productos y permite ver sus detalles.
+* **Características Técnicas:**
+    * Consumo de la **FakeStore API**.
+    * **Buscador en tiempo real:** Filtrado de productos mediante el método `.filter()` en arrays.
+    * **Persistencia de datos:** Uso de `localStorage` para pasar información del producto seleccionado entre la página de listado (`products.html`) y la de detalles (`productDetails.html`).
+    * Navegación dinámica mediante parámetros URL.
+
+---
+
+## ✒️ Autor
+
+**Mateo De Luca**
+* Estudiante de Ingeniería en Sistemas - UTN FRM
+* [LinkedIn](https://www.linkedin.com/in/mateodeluca)
+* [GitHub](https://github.com/MateoDLM)
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
